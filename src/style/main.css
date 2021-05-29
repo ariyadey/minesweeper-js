@@ -29,9 +29,15 @@ body {
   height: 100vh;
 }
 
-body > div:first-child {
+#game-box {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px var(--accent);
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "Press Start 2P", cursive;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 15px;
 }
