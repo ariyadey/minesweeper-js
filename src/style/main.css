@@ -41,3 +41,38 @@ body {
   transform: translate(-50%, -50%);
   padding: 15px;
 }
+
+#game-box > #upper-panel {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#logo-box {
+  font-size: 2rem;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  text-shadow: 0 0 5px var(--accent);
+}
+
+#logo-box > img {
+  height: 4vh;
+}
+
+#info-box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#info-box * {
+  text-shadow: 0 0 5px var(--accent);
+  font-size: 1.5rem;
+}
+
+#info-box > span:first-child {
+  display: flex;
+  align-items: center;
+}
