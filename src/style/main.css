@@ -25,6 +25,7 @@ button {
 }
 
 body {
+  background-color: var(--dark-grey);
   height: 100vh;
 }
 
