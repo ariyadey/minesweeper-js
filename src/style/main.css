@@ -59,7 +59,7 @@ body {
 }
 
 #logo-box > img {
-  height: 4vh;
+  height: 7vh;
 }
 
 #info-box {
@@ -67,6 +67,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin: 2% 2%;
 }
 
 #info-box * {
@@ -79,10 +80,44 @@ body {
   align-items: center;
 }
 
+#info-box > button {
+  font-size: 2.5rem;
+}
+
+#minefield-box {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 2rem;
+}
+
+#minefield-box > div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 #minefield-box button {
   display: inline-block;
   height: 50px;
   width: 50px;
   margin: 1px;
-  background: black;
+  background-size: cover;
+  box-shadow: 0 0 1px 1px var(--accent);
+  font: inherit;
+}
+
+#minefield-box button.default {
+  background-color: black;
+}
+
+#minefield-box button.cleared {
+  background-color: var(--accent);
+  color: black;
+}
+
+#minefield-box button.mined {
+  background-image: url("../../asset/fired.svg");
+}
+
+#minefield-box button.flagged {
+  background-image: url("../../asset/target.svg");
 }
